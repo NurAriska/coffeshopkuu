@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Kopi dan Makanan</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">CoffeShop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="website.php">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tentangkami.php">Tentang Kami</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.php">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontak.php">Kontak</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</head>
+<body>
+  <?php include 'navbar.php'; ?>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Menu</h2>
+        <ul class="nav nav-tabs" id="menuTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="kopi-tab" data-toggle="tab" href="#kopi" role="tab" aria-controls="kopi" aria-selected="true">Kopi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="makanan-tab" data-toggle="tab" href="#makanan" role="tab" aria-controls="makanan" aria-selected="false">Makanan</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="menuTabContent">
+          <div class="tab-pane fade show active" id="kopi" role="tabpanel" aria-labelledby="kopi-tab">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="kopi1.jpeg" class="card-img-top" alt="Espresso">
+                  <div class="card-body">
+                    <h5 class="card-title">Espresso</h5>
+                    <p class="card-text">Kopi dengan rasa kuat dan pekat, cocok untuk pencinta kopi sejati.</p>
+                    <a href="pesanan.php" class="btn btn-primary">Rp 20,000</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="kopi2.jpeg" class="card-img-top" alt="Cappuccino">
+                  <div class="card-body">
+                    <h5 class="card-title">Cappuccino</h5>
+                    <p class="card-text">Kopi dengan kombinasi sempurna antara espresso, susu, dan busa susu.</p>
+                    <a href="pesanan.php" class="btn btn-primary">Rp 25,000</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="kopi3.jpeg" class="card-img-top" alt="Latte">
+                  <div class="card-body">
+                    <h5 class="card-title">Latte</h5>
+                    <p class="card-text">Kopi dengan susu yang lembut dan rasa kopi yang lezat.</p>
+                    <a href="pesanan.php" class="btn btn-primary">Rp 23,000</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="makanan" role="tabpanel" aria-labelledby="makanan-tab">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="makanan1.jpeg" class="card-img-top" alt="Makanan 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Croissant</h5>
+                    <p class="card-text">Pastry yang populer sebagai hidangan khas di Prancis yang berbentuk bulan sabit.</p>
+                    <a href="pesanan.php" class="btn btn-primary">Rp 30,000</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="makanan2.jpeg" class="card-img-top" alt="Makanan 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Pancake</h5>
+                    <p class="card-text">Pancake adalah sajian klasik yang terbuat dari adonan tepung terigu, telur, susu, dan baking powder yang digoreng hingga matang.</p>
+                    <a href="pesanan.php" class="btn btn-primary">Rp 35,000</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="makanan3.jpeg" class="card-img-top" alt="Makanan 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Sandwich</h5>
+                    <p class="card-text">Sandwich adalah makanan yang terdiri dari dua atau lebih potongan roti yang diisi dengan berbagai macam bahan seperti daging, keju, sayuran, saus, atau lainnya.</p>
+                    <a href="pesanan.php" class="btn btn-primary">Rp 25,000</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <?php include 'footer.php'; ?>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
